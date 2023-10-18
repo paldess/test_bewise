@@ -1,0 +1,17 @@
+база данных разворачивается в docker compose
+каталог(volume)  dbdata в папке с docker-compose.yml
+пользователь в MySQL-root, password-523524
+
+запуск сервера для принятия запроса на flask
+порт 5000, хост - 0.0.0.0
+
+тестировалось на Ubuntu 20.04
+python 3.11
+
+команды для запуска:
+	pip install -r requirements.txt
+	docker compose up -d
+	main.py запустить демоном
+
+вид запроса :
+	"хост:5000/testing"   {"questions_num": integer}
